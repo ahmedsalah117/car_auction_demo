@@ -11,7 +11,7 @@ let auctionData = {
   participants: [],
   bids: [],
   startTime: Date.now(),
-  endTime: Date.now() + 0.5 * 60 * 1000, // 30 seconds from now just so you can test the auction ending quickly
+  endTime: Date.now() + 1 * 60 * 1000, // 1 minute from now just so you can test the auction ending quickly
   isActive: true,
   version: 1, // Version number for Optimistic Locking (Optimistic Concurrency Control) to prevent race conditions when multiple users are bidding at the same time (The scenario I was asked about.)
 };
