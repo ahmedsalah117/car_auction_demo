@@ -13,7 +13,7 @@ A Next.js application implementing a real-time car auction system with WebSocket
 - ✅ **Connection status** indicator for WebSocket health
 
 ### Advanced Features (Interview Requirements)
-- ✅ **Race Condition Protection** - Handles simultaneous bidding using optimistic locking
+- ✅ **Race Condition Protection** - Handles simultaneous bidding using optimistic locking (a.k.a: (Optimistic Concurrency Control))
 - ✅ **Edge Case Handling** - Proper messaging for auctions ending without participants
 - ✅ **Data Validation** - Server-side bid validation and comprehensive error handling
 - ✅ **Real-time Broadcasting** - All users receive updates instantly via WebSocket events
@@ -54,16 +54,12 @@ A Next.js application implementing a real-time car auction system with WebSocket
    ```
    > **Important**: The auction page is located at `/auction` route, not the root path.
 
-5. **Test real-time features**
-   - Open multiple browser tabs to simulate different users
-   - Try bidding simultaneously to test race condition handling
-
 ## 🏗️ Technical Architecture
 
 ### WebSocket Implementation
 - **Socket.IO** for reliable real-time communication
 - **Event-driven architecture** with custom event handlers
-- **Connection* health monitoring
+- **Connection** health monitoring
 
 ### Race Condition Solution
 As specifically requested in the interview, I implemented **optimistic locking** to handle the scenario where multiple users click "Place Bid" simultaneously:
@@ -185,7 +181,7 @@ Since I had never worked with WebSockets before, here's how I approached this as
 
 This implementation demonstrates:
 - **Learning ability** - Successfully learned WebSocket technology from scratch
-- **Problem-solving** - Identified and solved the race condition issue you mentioned
+- **Problem-solving** - Identified and solved the race condition mentioned during the interview
 - **Code quality** - Clean, commented, and well-structured code
 - **Testing mindset** - Considered edge cases
 - **Production awareness** - Understanding of what would be needed for real-world deployment
