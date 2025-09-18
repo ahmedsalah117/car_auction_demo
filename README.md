@@ -98,7 +98,7 @@ if (expectedVersion !== auctionData.version) {
 ├── pages/
 │   ├── api/
 │   │   └── socketio.js          # WebSocket server implementation
-│   app/
+├── app/
 |   |── auction/    
         └── page.jsx         # Auction page
 ├── next.config.js           # Next.js configuration for Socket.IO
