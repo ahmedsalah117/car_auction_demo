@@ -34,8 +34,8 @@ A Next.js application implementing a real-time car auction system with WebSocket
 ### Steps
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd auction-system
+   git clone git@github.com:ahmedsalah117/car_auction_demo.git
+   cd car_auction_demo
    ```
 
 2. **Install dependencies**
