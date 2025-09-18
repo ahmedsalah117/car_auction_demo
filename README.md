@@ -63,8 +63,7 @@ A Next.js application implementing a real-time car auction system with WebSocket
 ### WebSocket Implementation
 - **Socket.IO** for reliable real-time communication
 - **Event-driven architecture** with custom event handlers
-- **Auto-reconnection** and connection health monitoring
-- **Broadcasting system** for instant updates to all connected users
+- **Connection* health monitoring
 
 ### Race Condition Solution
 As specifically requested in the interview, I implemented **optimistic locking** to handle the scenario where multiple users click "Place Bid" simultaneously:
@@ -106,18 +105,6 @@ if (expectedVersion !== auctionData.version) {
 ├── package.json
 └── README.md
 ```
-
-### Key Files Explained
-
-**`/pages/api/socketio.js`** - WebSocket Server
-- Handles real-time connections and events
-- Implements race condition protection
-- Manages auction state and auto-closing logic
-
-**`/app/auction/page.jsx`** - Auction Interface  
-- React component with real-time WebSocket integration
-- Handles user interactions and live updates
-- Manages connection state and error handling
 
 
 ## 🎓 My Learning Process
@@ -170,7 +157,6 @@ Since I had never worked with WebSockets before, here's how I approached this as
 
 ### Edge Cases
 - Auction ending with no participants
-- Connection drops and reconnection
 - Invalid bid amounts
 - Bidding after auction ends
 
