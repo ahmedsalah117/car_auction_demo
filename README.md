@@ -18,7 +18,7 @@ A Next.js application implementing a real-time car auction system with WebSocket
 - ✅ **Data Validation** - Server-side bid validation and comprehensive error handling
 - ✅ **Real-time Broadcasting** - All users receive updates instantly via WebSocket events
 
-## Also added Input Validation & Security
+#### Input Validation & Security
 - ✅ **Server-side validation** of all user inputs
 - ✅ **Type checking** and sanitization of bid amounts  
 - ✅ **Length limits** and format validation for user names
