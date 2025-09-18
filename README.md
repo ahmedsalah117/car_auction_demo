@@ -13,7 +13,7 @@ A Next.js application implementing a real-time car auction system with WebSocket
 - ✅ **Connection status** indicator for WebSocket health
 
 ### Advanced Features (Interview Requirements)
-- ✅ **Race Condition Protection** - Handles simultaneous bidding using optimistic locking (a.k.a: (Optimistic Concurrency Control))
+- ✅ **Race Condition Protection** - Handles simultaneous bidding using optimistic locking (a.k.a: Optimistic Concurrency Control)
 - ✅ **Edge Case Handling** - Proper messaging for auctions ending without participants
 - ✅ **Data Validation** - Server-side bid validation and comprehensive error handling
 - ✅ **Real-time Broadcasting** - All users receive updates instantly via WebSocket events
